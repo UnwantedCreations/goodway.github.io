@@ -4,6 +4,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+user-select: none;
 }
 
 a {
@@ -367,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -556,7 +561,7 @@ section {
   margin: 5px 0 10px 60px;
 }
 .features .icon-box i {
-  font-size: 48px;
+  font-size: 25px;
   float: left;
   color: #5576D1;
 }
@@ -976,6 +981,24 @@ section {
   .testimonials .testimonial-item p {
     width: 80%;
   }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+  padding-bottom: 0;
+}
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
