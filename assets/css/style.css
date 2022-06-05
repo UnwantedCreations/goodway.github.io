@@ -69,9 +69,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #151515;
+  background: #0B0C0E url('../img/loading.gif')
+    no-repeat center ;
 }
 
+/*--------------------------------------------------------------
 #preloader:before {
   content: "";
   position: fixed;
@@ -104,6 +106,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
+--------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
